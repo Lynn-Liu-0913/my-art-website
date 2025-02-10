@@ -5,34 +5,85 @@
   <title>我的艺术作品</title>
   <!-- 告诉浏览器，style.css 是咱们的样式文件 -->
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的艺术作品</title>
+  <!-- 引入 Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 头部、横幅等其他部分 -->
+
 </head>
 <body>
   <!-- 导航区域 -->
   <header class="site-header">
     <nav>
       <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="gallery.html">作品集</a></li>
-        <li><a href="about.html">关于我</a></li>
-        <li><a href="contact.html">联系</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="contact.html">CONTACT ME</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- 主页主要内容：可以放一个大横幅（banner） -->
   <section class="hero">
-    <h1>欢迎来到我的艺术空间</h1>
-    <p>在这里欣赏我的最新创作</p>
-    <!-- 点击可以跳转到作品集页面（还没建，但稍后会建） -->
-    <a href="gallery.html" class="btn">查看作品</a>
-  </section>
+  <!-- 大标题、描述、按钮部分 -->
+  <h1>Welcome to My Art Space</h1>
+  <p>Explore my latest creations here</p>
+  <a href="gallery.html" class="btn">Gallery</a>
+
+  <!-- 滚动照片区域 -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- 每个swiper-slide为一个小照片的容器 -->
+      <div class="swiper-slide">
+        <img src="images/artwork1.jpg" alt="作品1">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/artwork2.jpg" alt="作品2">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/artwork3.jpg" alt="作品3">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/artwork4.jpg" alt="作品4">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/artwork5.jpg" alt="作品5">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/artwork6.jpg" alt="作品6">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/artwork7.jpg" alt="作品7">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/artwork8.jpg" alt="作品8">
+      </div>
+      <!-- 根据需要增加更多幻灯片 -->
+    </div>
+    <!-- 分页器或导航按钮（可选） -->
+        <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
 
   <!-- 页脚 -->
   <footer class="site-footer">
-    <p>© 2025 我的名字. 版权所有.</p>
+    <p>© 2025 YINGLIU. All Rights Reserved.</p>
   </footer>
 
   <!-- script.js 是我们要写的一点点JS -->
+  <script src="script.js"></script>
+    <!-- 引入 Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
